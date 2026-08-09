@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "AI Assistant",
+    "slug": "ai-chatbot-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#171717"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.vcetputtur.aichatbotapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#171717"
+      },
+      "permissions": [
+        "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vcetputtur.aichatbotapp"
+    },
+    "plugins": [
+      "expo-audio"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "80a88031-be81-4aaf-92c7-36f751c5c3a9"
+      }
+    }
+  }
+}
