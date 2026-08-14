@@ -7,3 +7,4 @@ web-build/
 *.p12
 *.key
 *.mobileprovision
+src/utils/config.js

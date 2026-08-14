@@ -85,8 +85,17 @@ export default function ChatScreen() {
         setSessions([first]);
         setActiveSessionId(first.id);
       } else {
-        setSessions(saved);
-        setActiveSessionId(saved[0].id);
+        // Always start on a fresh new chat, unless the most recent one
+        // is already empty (avoids piling up blank chats every launch).
+        const mostRecent = [...saved].sort((a, b) => b.updatedAt - a.updatedAt)[0];
+        if (mostRecent.messages.length === 0) {
+          setSessions(saved);
+          setActiveSessionId(mostRecent.id);
+        } else {
+          const fresh = createEmptySession();
+          setSessions([fresh, ...saved]);
+          setActiveSessionId(fresh.id);
+        }
       }
       setIsHistoryLoaded(true);
     })();

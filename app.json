@@ -31,7 +31,11 @@
       "bundleIdentifier": "com.vcetputtur.aichatbotapp"
     },
     "plugins": [
-      "expo-audio"
+      "expo-audio",
+      "expo-image-picker",
+      "expo-document-picker",
+      "expo-font",
+      "expo-asset"
     ],
     "extra": {
       "eas": {
