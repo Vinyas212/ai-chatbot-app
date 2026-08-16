@@ -8,6 +8,9 @@ responses. Both AI services generate candidate responses, and Gemini compares
 the responses and selects the better answer before displaying it to the user.
 
 ---
+## 📱 Download Android APK
+
+[**⬇️ DOWNLOAD AI ASSISTANT APK**](https://expo.dev/artifacts/eas/_8BvFVr5EqziBgCrGTbBxlrvxRwj_LpQrLx4yhH4Vzo.apk)
 
 ## 🚀 Features
 
